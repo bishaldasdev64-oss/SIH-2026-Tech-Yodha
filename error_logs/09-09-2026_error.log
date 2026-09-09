@@ -1,0 +1,13 @@
+09-09-2026 21:53:32 - ERROR - 
+Permission Error encountered: No Permission to Write to /home/sys_oper/MOSDAC_Downloads/, hence could not Proceed with Download.
+Please Check and Update the Permission for Writing files inside: /home/sys_oper/MOSDAC_Downloads/
+09-09-2026 22:14:17 - ERROR - An error was encountered while Downloading 
+09-09-2026 22:14:41 - ERROR - An error was encountered while Downloading 
+09-09-2026 22:27:44 - ERROR - An error was encountered while Downloading 
+09-09-2026 23:48:48 - ERROR - 
+
+Error Fetching Data from Search Endpoint.
+
+Error Message: Data unavailable for given parameters
+Error Details: {'timestamp': '09-09-2026 11:48:48', 'statusCode': 500, 'message': ['Data unavailable for given parameters']}
+
