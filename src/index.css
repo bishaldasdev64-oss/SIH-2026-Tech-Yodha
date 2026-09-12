@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   Minimal custom CSS — only for effects that aren't reasonably
+   expressible as Tailwind utilities (per the conversion brief).
+   Everything else uses Tailwind classes directly in components.
+========================================================== */
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background-color: #050912;
+  color: #eef3fb;
+  font-family: 'Inter', sans-serif;
+  background-image:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(63,215,232,0.07), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 10%, rgba(79,163,247,0.06), transparent 60%);
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #182c48; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+/* Dashed pulse ring used on the cloudburst hotspot overlay (map + charts hero) */
+.hotspot-dash-ring {
+  border: 1px dashed rgba(255,255,255,0.35);
+  border-radius: 9999px;
+  animation: dashRing 2.6s ease-in-out infinite;
+}
+
+@keyframes dashRing {
+  0%, 100% { opacity: 0.45; transform: scale(1); }
+  50% { opacity: 0.05; transform: scale(1.3); }
+}
+
+/* Radial gradient legend bar (rainfall intensity scale) — a true multi-stop
+   horizontal gradient like this isn't a default Tailwind utility. */
+.legend-gradient-bar {
+  height: 6px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #3fa3f7, #3fd7e8, #f0c93b, #f3922f, #f14e4e);
+}
+
+/* Google Maps container needs an explicit sized box */
+.gmap-container {
+  width: 100%;
+  height: 100%;
+}
