@@ -24,8 +24,8 @@ export const demoAdminMetrics = {
 
 export const demoCloudburstEvent = {
   status: 'EVENT DETECTED',
-  area: 'Agartala',
-  district: 'West Tripura',
+  area: 'Ambassa',
+  district: 'Dhalai Tripura',
   state: 'Tripura, India',
   risk: 'CRITICAL',
   rainfall: 82,
